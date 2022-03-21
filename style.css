@@ -31,7 +31,7 @@ section {
   margin-bottom: 24px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .section-title {
@@ -52,11 +52,11 @@ iframe {
 }
 
 #music {
-  background: #bbefef;
+  /* background: #bbefef; */
 }
 
 #software {
-  background: #ffd4c3;
+  /* background: #ffd4c3; */
 }
 
 .block {
