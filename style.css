@@ -6,6 +6,7 @@ body {
   color: #151515;
   display: flex;
   height: 85vh;
+  background: #f2f2f2;
 }
 
 p {
@@ -28,15 +29,17 @@ img {
 }
 
 section {
-  margin-bottom: 24px;
+  margin: 100px 0;
   display: flex;
   flex-direction: column;
-  /* padding: 20px; */
+  align-items: center;
 }
 
 .section-title {
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 48px;
+  border-bottom: 2px solid;
+  padding-bottom: 4px;
 }
 
 iframe {
@@ -51,6 +54,10 @@ iframe {
   background: lightyellow;
 }
 
+.artists {
+  text-align: center;
+}
+
 #music {
   /* background: #bbefef; */
 }
@@ -61,18 +68,16 @@ iframe {
 
 .blocks {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 100%;
 }
 
 .block {
-  border: 1px solid #d2d2d2;
-  width: 50%;
-  padding: 36px;
+  margin-bottom: 12px;
   box-sizing: border-box;
-}
-
-.block:first-child {
-  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 750px) {
@@ -88,15 +93,41 @@ iframe {
     }
 }
 
-.block:hover {
-  background: #f2f2f2;
-}
-
 .block a {
   text-decoration: none;
   display: block;
+  color: #999;
+  font-weight: 400;
 }
 
 iframe {
   max-width: 800px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.project p {
+  margin-bottom: 0;
+}
+
+.project span {
+  color: #999;
+  text-align: center;
+}
+
+.project img {
+  margin: 24px 0;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+/* Wistia */
+
+.wistia_responsive_padding {
+  margin-bottom: 36px;
 }
